@@ -21,7 +21,7 @@ plt.title("RMSF Protein")
 plt.xlim(pro_x.min(),pro_x.max())
 plt.plot(pro_x,pro_y,lw=1.2)
 plt.xticks([pro_x[i * 20] for i in range(int(len(pro_x)/20))],rotation="vertical")
-plt.ylabel("ns")
+plt.ylabel("nm")
 plt.xlabel("Backbone Atom Nums")
 
 #/////
@@ -31,7 +31,7 @@ plt.xlim(0,lig_x.max() - lig_x.min())
 plt.ylim(0,0.5)
 plt.plot(lig_x - lig_x.min(), lig_y,lw=1.2)
 plt.xticks(lig_x - lig_x.min())
-plt.ylabel("ns")
+plt.ylabel("nm")
 plt.xlabel("Heavy Atom Nums")
 
 
